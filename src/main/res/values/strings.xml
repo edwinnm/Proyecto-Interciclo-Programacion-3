@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EstoySeguro</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="mapaPositivoString">Mapa de las Localidades Positivas</string>
+    <string name="mapaNegativoString">Mapa de las Localidades Negativas</string>
+
+
+
+</resources>

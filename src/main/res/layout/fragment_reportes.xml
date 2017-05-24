@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context="proyecto.ejemplo.mundo.hola.edwin.myapplication.ReportesFragment">
+
+    <TextView
+        android:id="@+id/tvReportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reportar Sucesos"
+        android:textColor="#26242d"
+        android:textSize="40dp"
+        android:layout_marginTop="31dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvReportes"
+        android:id="@+id/rGPosNeg">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/opcPos"
+            android:text="Positivo"
+            android:textSize="30dp"
+            android:textColor="#8e8d8d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/opcNeg"
+            android:text="Negativo"
+            android:textSize="30dp"
+            android:textColor="#CCCCCC"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/Spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rGPosNeg"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/rGPosNeg"
+        android:layout_alignStart="@+id/rGPosNeg"
+        android:layout_alignRight="@+id/rGPosNeg"
+        android:layout_alignEnd="@+id/rGPosNeg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Localización"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#CCCCCC"
+        android:layout_below="@+id/Spinner1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etLocalizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Ingrese una zona de la ciudad"
+        android:maxLines="1"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/rGPosNeg"
+        android:layout_alignEnd="@+id/rGPosNeg"
+        android:layout_alignLeft="@+id/rGPosNeg"
+        android:layout_alignStart="@+id/rGPosNeg" />
+
+    <Button
+        android:id="@+id/buttonManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        android:layout_below="@+id/etLocalizacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/buttonGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usar GPS"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonManual"
+        android:layout_alignRight="@+id/etLocalizacion"
+        android:layout_alignEnd="@+id/etLocalizacion"
+        android:layout_alignLeft="@+id/etLocalizacion"
+        android:layout_alignStart="@+id/etLocalizacion" />
+
+
+</RelativeLayout>
